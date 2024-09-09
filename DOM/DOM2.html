@@ -1,0 +1,31 @@
+<!-- Using firstChild and lastChild to Highlight Navigation Links -->
+
+<html>
+    <head>
+        <title>Child</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <p>Using firstChild and lastChild to Highlight Navigation Links</p>
+
+        <script>
+                  function boldFirstandLastNav(){
+                const My_Element = document.body.children[0];
+
+                My_Element.firstElementChild.style.fontWeight = "bold";
+                My_Element.lastElementChild.style.fontWeight = "bold";
+
+        }
+        function BoldMe(){
+            document.body.children[1].style.fontWeight="bold"
+        }
+        BoldMe()
+        boldFirstandLastNav()
+        </script>
+    </body>
+</html>

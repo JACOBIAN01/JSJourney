@@ -1,0 +1,30 @@
+<!--
+: Implementing a Back Button in a Web Application
+-->
+
+<html>
+    <head>
+        <title>
+            Creating Back Button
+        </title>
+        <script>
+        function TakeMeBack(){
+            window.location(window.history.go(-1));
+        }
+        function getHistory(){
+            var l = window.history.length;
+            return l;
+        }
+    </script>
+    </head>
+    <body>
+    
+    <script>
+        var HistoryLength = getHistory();
+        document.write("<p>Welcome! The Number of Pages you've visit in this window is: "+HistoryLength+". </p>");
+    </script>
+    <br>
+    <a href="javascript:void(0);" onclick="TakeMeBack()">Go Back</a>
+    </body>
+    
+</html>

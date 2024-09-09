@@ -1,0 +1,21 @@
+<!-- An HTML Document -->
+<html>
+    <head>
+        <title>HTML Doc</title>
+    </head>
+    <body>
+       <section>
+           <p>First Child</p>
+           <p>Second Child</p>
+           <p>Third Child</p>
+        </section>
+        <h3>Nodes in the section Element!</h3>
+        <script>
+var myNodelist =
+document.body.childNodes[1].childNodes;
+ for (i = 0; i < myNodelist.length; i++){
+ document.write (myNodelist[i] + "<br>");
+ }
+        </script>
+    </body>
+</html>
